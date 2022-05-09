@@ -21,6 +21,9 @@ namespace ServiceP3
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+#if DEBUG
+                    webBuilder.UseUrls("https://localhost:5002");
+#endif
                 });
     }
 }
