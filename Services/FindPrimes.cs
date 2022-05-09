@@ -14,10 +14,6 @@ namespace ServiceP3.Services
             long firstPrime = FindPrimeBeforeCode(n, code);
             long hash = firstPrime * lastPrime;
 
-            Console.WriteLine("firstPrime: " + firstPrime);
-            Console.WriteLine("lasPrime: " + lastPrime);
-            Console.WriteLine("hash: " + hash);
-
             return hash.ToString();
         }
         public bool isPrime(int number)
