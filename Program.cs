@@ -23,6 +23,8 @@ namespace ServiceP3
                     webBuilder.UseStartup<Startup>();
 #if DEBUG
                     webBuilder.UseUrls("https://localhost:5002");
+#else
+                    webBuilder.UseUrls("https://service-p3.azurewebsites.net/");
 #endif
                 });
     }
